@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Encabezado from "./components/Encabezado";
+import Lista from "./components/Lista";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Encabezado/>
+      <ul>
+        <Lista thing = "Learn React"/>
+        <Lista thing = "Climb Mt. Everest"/>
+        <Lista thing = "Run a marrathon"/>
+        <Lista thing = "Feed the dogs"/>
+      </ul>
     </div>
   );
 }
